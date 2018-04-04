@@ -17,5 +17,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    # 관리자페이지로 들어갈 수 있다.
     path('admin/', admin.site.urls),
 ]
