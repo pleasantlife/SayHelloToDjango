@@ -42,4 +42,25 @@ LANGUAGE_CODE = 'ko-kr'
 
 TIME_ZONE = 'Asia/Seoul'
 ```  
- 
+
+
+## 5. Restful API 만들기
+ - Restful API? : 서버에서 데이터베이스의 Create, Read, Update, Delete가 가능하도록 짜여진 API를 말한다.
+ - Django의 라이브러리인 'djangorestframework'를 이용하면 django로 Restful API를 만들 수 있다.
+ - django의 데이터베이스에 Json 타입 데이터를 보내 추가하거나, 데이터베이스의 내용을 Json으로 받아볼 수 있도록 해준다.
+
+### 3-1. DjangoRestFramework 적용하기
+ - 설치 : 'pip install djangorestframework' 명령어로 설치한다.
+ - django 서버에 적용 : 원하는 프로젝트의 settings.py 파일에서 INSTALLED_APP 부분에 'rest_framework'를 추가한다.
+```python
+# 문자열 배열의 마지막에도 쉼표를 꼭 넣어야 한다.
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',
+]
+```
