@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'psycopg2',
 ]
 
 MIDDLEWARE = [
@@ -86,8 +87,8 @@ WSGI_APPLICATION = 'testdjangoproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mydatabase',
-        'USER': 'mydatabaseuser',
+        'NAME': 'PostgreSQL 10',
+        'USER': 'postgres',
         'PASSWORD': 'mypassword',
         'HOST': '127.0.0.1',
         'PORT': '5432',
