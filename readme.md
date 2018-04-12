@@ -17,8 +17,10 @@
  - 가상환경 세팅 : 가상환경을 구축하고자 하는 폴더를 생성한 후 폴더안에서 'virtualenv 가상환경명'으로 생성 가능하다.
  - 가상환경 접속 : virtualenv로 가상환경 세팅 후 가상환경명\Scripts\Activate(윈도우 기준) 명령어를 실행하면, 가상환경으로 접속할 수 있다.
  - django 설치 : pip install django 명령을 실행하면 자동적으로 django 패키지가 설치된다.
+ ![가상환경 세팅부터 django 설치 요약 스크린샷](https://github.com/pleasantlife/SayHelloToDjango/blob/master/virtual%20environment%20setup.png)
  - 프로젝트 생성 : 'django-admin startproject 프로젝트명' 명령어를 실행하여 프로젝트를 생성한다.
  - 어플리케이션 생성 : 프로젝트 폴더로 들어간 후, 'django-admin startapp 어플리케이션명' 명령어를 실행하여 어플리케이션을 생성한다.
+ ![프로젝트 생성, 어플리케이션 생성 요약 스크린샷](https://github.com/pleasantlife/SayHelloToDjango/blob/master/django%20admin%20install.png)
  - 서버 구동 : manage.py가 위치한 폴더에서 'python manage.py runserver' 명령을 실행하면 서버 구동 완료.
  - 구동 확인 : 웹브라우저에서 127.0.0.1:8000에 접속했을 때, django 기본 페이지가 나오면 구동이 제대로 되고 있는 것이다.
  - 이 상태에서는 메인페이지 이외에는 접속할 수 없다.
